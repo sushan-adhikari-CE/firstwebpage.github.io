@@ -126,12 +126,41 @@
     <p>You can search about CSS by clicking <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"
             id="link1">here.</a></p>
     <!--You can use self, blank, parent, and top in the target for a link-->
-    <a href="https://google.com" title="leads to copyright free images"><img src="linked image.jpg"
-            alt="image failed to load" style="height: 250px; width: 250px;"></a>
+    <p><a href="https://google.com" title="leads to copyright free images"><img src="linked image.jpg"
+                alt="image failed to load" style="float:right; height: 250px; width: 250px;"></a>Image will float on the
+        right of text</p>
     <br><br>
     <button id="mail" title="send a mail">send me an email</button>
     <br>
     <p>click on <a href="#top">top</a> to go to the top of the page</p>
+    <br><br>
+    <!--Creating maps on an image, clickable areas inside an image-->
+    <img src="mapped.jpg" alt="the image of workplace failed to load" id="workplace" usemap="#workmap"
+        style="height:300px ; width: 450px;">
+    <map name="workmap">
+        <area shape="rect" coords="204,32,382,280" href="paper.html" alt="paper not found" onclick="myfunction1()">
+        <area shape="rect" coords="99,210,189,287" href="paper.html" alt="paper not found" onclick="myfunction1()">
+        <area shape="circle" coords="140,74,46" href="coffee.html" alt="coffee not found" onclick="myfunction2()">
+        <area shape="poly" coords="100,135,194,140,195,188,95,185" href="mobile.html" alt="mobile not found"
+            onclick="myfunction3()">
+        <area shape="poly" coords="81,152,71,150,69,272,84,267" href="pen.html" alt="pen not found"
+            onclick="myfunction4()">
+    </map>
+    <script>
+        function myfunction1() {
+            alert("You clicked the paper!");
+        }
+        function myfunction2() {
+            alert("You clicked on the coffee cup!");
+        }
+        function myfunction3() {
+            alert("You clicked on the mobile phone!");
+        }
+        function myfunction4() {
+            alert("You clicked on the pen!");
+        }
+    </script>
+
 </body>
 
 </html>

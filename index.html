@@ -1,0 +1,137 @@
+<!--Learning HTML-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <title>First Webpage</title>
+    <style>
+        #first {
+            background-color: red;
+        }
+
+        #second {
+            color: hsla(0, 100%, 20%, 0.75);
+        }
+
+        /* Defining the action of clicking and other actions on the link */
+        a:link {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: magenta;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+
+<body style="background-color: powderblue;">
+    <h1 style="color: rgb(202, 85, 105);" id="top">Hello World</h1>
+    <!--The size of the heading can be specified by using CSS with style="font-size = 60px;"-->
+    <h2 style="font-size: 40px;">First Webpage</h2>
+    <h3>Third Heading</h3>
+    <p title="Hello, I am extra info" style="color: rgb(250, 99, 5);">This is a paragraph.</p>
+    <!--style defines the color, font, size and others to the element-->
+    Hello there, this is a general text.
+    <br>
+    This is a link: <a href="https://www.google.com/">link</a><br>
+    For an image, alternative text helps to determine what to display when the image fails to load
+    <img src="img.jpg" alt="Image not found" width="200" height="200">
+    <br>
+    <!--You can use single quote or double quote -->
+    <p style="color: blue; " title=' Use single or "double" quote'>'Hello, there "wassup". '</p>
+
+    <h1 id="first_head">First heading</h1>
+    <p id="first_para">First para</p>
+    <hr><!--creates a horizontal line-->
+    <h2>Second heading</h2>
+    <p>Second para</p>
+    <!--Break inside paragraphs-->
+    <p>For the same paragraph <br> with breaks in between, <br> a lot of them</p>
+    <!--For writing a thing as preconditioned format, use <pre></pre>-->
+    <pre>
+        Hello
+        there
+        Hello
+    </pre>
+    <!--For defining styles using CSS-->
+    <p style="background-color: blue;">This is in blue</p>
+    <h2 style="font-family: 'Times New Roman', Times, serif;">This is in Times New Roman</h2>
+    <p style="font-size: 150%;">This is at 150% </p>
+    <h3 style="text-align: center;">This is at the center</h3>
+    <!--For formatting in HTML-->
+    <p><b>This is bold text</b></p>
+    <i>This is italic text</i><br>
+    <strong>This is important!</strong><br>
+    <em>This gives emphasis</em><br>
+    <small>This one is small in comparison with others</small>
+    <p>I want to give emphasis on <mark>this</mark> stuff</p>
+    <p>I want to strike <del>this stuff</del></p>
+    <p>I want to insert <ins>this stuff</ins></p>
+    <p>for superscript <sup>sup</sup> and for subscript <sub>sub</sub></p>
+
+    <!--For quoting and referencing: -->
+    <p>This is adapted from WWF</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization,
+        WWF works in nearly 100 countries.
+    </blockquote>
+    <!--
+    <p> This paragraph is also a comment
+        and everything between this thing will not be displayed
+-->
+    <p style="color: brown;">This text is in brown color</p>
+    <p style="border: 3px dashed tomato;">This is inside a border</p>
+    <h2 style="border: 2px solid rgb(255,91,73);">This must be inside a border</h2>
+    <p style="color: rgba(255,10,50,0.9)">This contains rgba(red, green, blue, alpha(opacity of the color))</p>
+    <p style="background-color: rgba(50,50,50,0.85);">With background color(equal values for shades of gray)</p>
+    <!--using hexadecimal values for color-->
+    <p style="color: #ff0000">This is completely red</p>
+    <p style="color: #00ff00">This is completely green</p>
+    <p style="color: #0000ff;">This is completely blue</p>
+    <p style="color: #000000;">This is completely black</p>
+    <p style="color: #ffffff">This is completely white</p>
+    <!--Using HSL or HSLA for colors-->
+    <h3 style="color: hsla(0, 100%, 20%, 0.75);">hue, saturation(0-100%), lightness(0-100%) and alpha(opacity)(0-1)</h3>
+    <h3 style="color: hsla(120, 50%, 50%, 0.9)"> H is 0 for complete red, 120 for green, and 240 for blue</h3>
+    <p style="background-color: magenta;">This is inline CSS</p>
+    <h3 id="first">This is internal CSS(in the HTML file)</h3>
+    <h5 id="second"> This is also internal CSS. </h5>
+    <pre id="CSS_border">
+        Manipulating boxes using CSS.
+        Creating a rounded border for style.</pre>
+    <p id="img">using image as a border</p>
+    <p id="grad">Using gradient as a border</p>
+    <p>You can search about CSS by clicking <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"
+            id="link1">here.</a></p>
+    <!--You can use self, blank, parent, and top in the target for a link-->
+    <a href="https://google.com" title="leads to copyright free images"><img src="linked image.jpg"
+            alt="image failed to load" style="height: 250px; width: 250px;"></a>
+    <br>
+    <button id="mail" title="send a mail">send me an email</button>
+    <br>
+    <p>click on <a href="#top">top</a> to go to the top of the page</p>
+
+</body>
+
+</html>
